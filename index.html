@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="kn">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ಗಂಗಾಧರ ಪೂಜಾ ಸ್ಟೋರ್</title>
+
+<!-- Kannada Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&family=Noto+Sans+Kannada:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    .call-link {
+  /* 1. Remove the blue color */
+  color: #ffffff !important; 
+  
+  /* 2. Remove the underline */
+  text-decoration: none !important; 
+  
+  /* 3. Keep it consistent */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Ensures it doesn't turn purple after being clicked */
+.call-link:visited {
+  color: #ffffff !important;
+}
+
+/* Optional: Subtle glow when hovering so users know it is clickable */
+.call-link:hover {
+  opacity: 0.8;
+  text-decoration: none !important;
+}
+
+body{
+margin:0;
+font-family:'Noto Sans Kannada', sans-serif;
+
+/* Background Image */
+
+background-image:url("pooja.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+}
+
+/* Dark overlay for readability */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+z-index:-1;
+}
+
+/* HEADER */
+
+header {
+  /* 1. Transparent Gradient: Using 30% opacity (0.3) for a light tint */
+  background: linear-gradient(
+    90deg, 
+    rgba(214, 146, 18, 0.3), /* Your Yellow/Gold */
+    rgba(211, 47, 47, 0.3)  /* Your Red */
+  );
+  
+  /* 2. Frosted Glass Effect: This makes the light colors 'glow' */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  
+  /* 3. The "Light" Edge: A thin white border at the bottom */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  
+  /* 4. Shadow: Gives the header a floating look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  /* Your existing text styles */
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 36px;
+  font-family: 'Baloo Tamma 2', cursive;
+  letter-spacing: 2px;
+  
+  /* High contrast for white text on light backgrounds */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* NAVBAR */
+
+nav{
+background:#b71c1c;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:12px 18px;
+font-size:18px;
+}
+
+nav a:hover{
+background:#8b0000;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+color:white;
+}
+
+.hero h1{
+font-size:42px;
+font-family:'Baloo Tamma 2', cursive;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.6;
+margin-top:10px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+background:#3eda89;
+color:white;
+font-size:18px;
+text-decoration:none;
+border-radius:8px;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  /* Optional: slightly blur the background of the whole section */
+  background: rgba(255, 255, 255, 0.05); 
+}
+
+.card {
+  /* 1. Transparency: Using a light white with 20% opacity */
+  background: rgba(255, 255, 255, 0.15); 
+  
+  /* 2. The Frosted Glass Blur */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  /* 3. The Edge Highlight (Thin white border) */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
+  padding: 25px;
+  border-radius: 12px;
+  
+  /* 4. Soft Shadow for depth */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect to make the card "glow" when touched */
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.card h3 {
+  font-size: 22px;
+  /* Changed color to a brighter red or gold for better contrast on glass */
+  color: #ffeb3b; 
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.card p {
+  font-size: 17px;
+  color: #ffffff; /* White text looks best on transparent backgrounds */
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+header{
+font-size:28px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+🙏 ಶ್ರೀ ಮಂಜುನಾಥ ಪ್ರಸನ್ನ 🙏
+
+</header>
+
+<nav>
+
+
+
+</nav>
+
+<section class="hero">
+
+<h1>ನಮ್ಮ ಅಂಗಡಿಗೆ ಸ್ವಾಗತ</h1>
+
+<p>
+
+ನಮ್ಮಲ್ಲಿ ಎಲ್ಲಾ ರೀತಿಯ ಪೂಜಾ ಸಾಮಗ್ರಿಗಳು, ದೇವಸ್ಥಾನ ಪೂಜೆ ಸಾಮಗ್ರಿಗಳು,  
+ಹಬ್ಬದ ಪೂಜಾ ಕಿಟ್ ಮತ್ತು ಹೋಮ / ಹವನ ಸಾಮಗ್ರಿಗಳು ಲಭ್ಯವಿವೆ.
+
+</p>
+
+
+
+</section>
+
+<section class="services">
+
+<div class="card">
+
+<h3>🪔 ಪೂಜಾ ಸಾಮಗ್ರಿಗಳು</h3>
+
+<p>
+ಎಲ್ಲಾ ದೇವರ ಪೂಜೆ ಸಾಮಗ್ರಿಗಳು ಇಲ್ಲಿ ಲಭ್ಯ
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🔥 ಹೋಮ / ಹವನ ಸಾಮಗ್ರಿ</h3>
+
+<p>
+ಹೋಮ ಮತ್ತು ಹವನಕ್ಕೆ ಬೇಕಾದ ಎಲ್ಲಾ ಸಾಮಗ್ರಿಗಳು
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎉 ಹಬ್ಬದ ಪೂಜಾ ಕಿಟ್</h3>
+
+<p>
+ವಿಶೇಷ ಹಬ್ಬಗಳಿಗೆ ಪೂಜಾ ಕಿಟ್ ಲಭ್ಯ
+</p>
+
+</div>
+
+</section>
+
+
+
+<style>
+  footer {
+    /* This makes the background semi-transparent */
+    background-color: rgba(255, 255, 255, 0.1); 
+    
+    /* This adds a blur effect to the background (optional but looks great) */
+    backdrop-filter: blur(10px); 
+    
+    /* Adds a subtle border and padding */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    
+    /* Text styling */
+    color: #ffffff; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .wa-link {
+    color: #25D366; /* WhatsApp Green */
+    text-decoration: none;
+    font-weight: bold;
+  }
+</style>
+
+<footer>
+  <div class="address">
+    📍 ಶಿವಮಾತ ಚಿತ್ರಮಂದಿರದ ಎದುರುಗಡೆ. ಮೇನ್ ರೋಡ್. ಸಿರವಾರ-584129.
+
+ಜಿ|| ರಾಯಚೂರು
+  </div>
+  
+
+<p class="contact-line" style="color: white; font-family: 'Baloo Tamma 2', cursive;">
+  <span class="icon">📞</span> ಸಂಪರ್ಕ: 
+  <a href="tel:+918792619415" class="call-link">+91 8792619415</a>, 
+  <a href="tel:+919902657747" class="call-link">+91 9902657747</a>
+</p>
+</footer>
+
+
+
+
+</body>
+
+</html>
